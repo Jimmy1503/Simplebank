@@ -6,13 +6,13 @@ import (
 	"os"
 	"testing"
 
+	"simplebank/util"
+
 	_ "github.com/lib/pq"
-	"github.com/techschool/simplebank/util"
 )
 
 var testQueries *Queries
 var testDB *sql.DB
-
 
 func TestMain(m *testing.M) {
 	config, err := util.LoadConfig("../..")
